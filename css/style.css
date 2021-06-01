@@ -1,0 +1,87 @@
+body {
+    font-family: "Roboto";
+    /* good range for body copy is 14px - 20px */
+    font-size: 16px;
+    /* 16 * 1.5 */
+    line-height: 1.5;
+    color: #473538;
+}
+
+header {
+    padding: 0 14px;
+    /* when we float elem inside of our header, they are taken outside the regular box flow of the page, and as a result our header collapses, to get our header to have its own proper height again, we can use overflow: hidden as a trick to get it working */
+    overflow: hidden;
+    margin: 0;
+}
+
+header h1 {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 24px;
+}
+
+header nav a {
+    color: #473538;
+    text-decoration: none;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hero {
+    background-image: url(../assets/hero.jpg);
+    background-size: cover;
+    padding-top: 230px;
+    padding-bottom: 200px;
+    /* to display the part of image we like x(right) y(center) */
+    background-position: right center;
+}
+
+.hero div {
+    /* shrink and grow with the page up to 520px. keeps it fluid and responsive */
+    max-width: 540px;
+    /* to center use margin auto */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-family: "David Libre";
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    /* to make it narrow and not too long */
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flowers {
+    /* to fix float overflow and get its height respected by the container */
+    overflow: hidden;
+}
+
+.flowers img {
+    float: left;
+    /* by using a percentage width, images will be fluid in relation to the size of the container */
+    width: 33.333%;
+}
+
+.quotes {
+    overflow: hidden;
+}
+
+.quotes img {
+    float: left;
+    width: 50%;
+}
