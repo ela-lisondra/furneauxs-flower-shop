@@ -5,6 +5,7 @@ body {
     /* 16 * 1.5 */
     line-height: 1.5;
     color: #473538;
+    margin: 0;
 }
 
 header {
@@ -81,7 +82,75 @@ header nav a {
     overflow: hidden;
 }
 
-.quotes img {
+.quotes div {
     float: left;
     width: 50%;
+    text-align: center;
+    padding: 50px 0 40px 0;
+}
+
+.cream-background {
+    background-color: #f7f1ee;
+}
+
+.quotes img {
+    /* no need to use max-width */
+    width: 90px;
+    /* we can round the corners of elements using pure css by setting it as a percentage it will turn our avatars into a perfect circle */
+    border-radius: 100%;
+}
+
+.quotes blockquote {
+    font-family: "David Libre";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.15;
+    max-width: 400px;
+    /* text align center doesnt work on elem only on text and images */
+    margin: 15px auto 5px auto;
+}
+
+.chair {
+    /* if we override the bg img, position and padding from our .hero class above (which is also on the element) */
+    background-image: url(../assets/full-bleed.jpg);
+    background-position: center bottom;
+    padding: 0;
+    height: 500px;;
+}
+
+.logos {
+    background-color: #eeae9f;
+    padding: 20px 20px 35px 20px;
+    text-align: center;   
+}
+
+.logos p {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.logos img {
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+footer {
+    background-color: #473538;
+    padding: 10px 30px 20px 30px;
+    overflow: hidden;
+}
+
+footer img {
+    float: left;
+    padding-top: 20px;
+}
+
+footer p {
+    float: right;
+    font-size: 14px;
+    color: #ccc9ca;
+    font-weight: 700;
+    padding-top: 5px;
+    font-family: "David Libre";
 }
